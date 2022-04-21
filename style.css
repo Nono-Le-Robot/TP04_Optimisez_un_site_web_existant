@@ -39,6 +39,10 @@ a:hover {
     position: relative;
 }
 
+#black-bg{
+    background-color: rgba(61, 55, 31, 0.797);
+}
+
 .bloc .container {
     padding-left: 0;
     padding-right: 0;
@@ -100,11 +104,11 @@ a:hover {
 }
 
 .d-bloc {
-    color: rgba(255, 255, 255, .7);
+    color: rgb(255, 255, 255);
 }
 
 .d-bloc button:hover {
-    color: rgba(255, 255, 255, .9);
+    color: rgb(255, 255, 255);
 }
 
 .d-bloc .icon-round,
@@ -112,7 +116,7 @@ a:hover {
 .d-bloc .icon-rounded,
 .d-bloc .icon-semi-rounded-a,
 .d-bloc .icon-semi-rounded-b {
-    border-color: rgba(255, 255, 255, .9);
+    border-color: rgb(255, 255, 255);
 }
 
 .d-bloc .divider-h span {
@@ -133,7 +137,7 @@ a:hover {
 .d-bloc h5 a,
 .d-bloc h6 a,
 .d-bloc p a {
-    color: rgba(255, 255, 255, .6);
+    color: rgb(255, 255, 255);
 }
 
 .d-bloc .a-btn:hover,
@@ -477,6 +481,7 @@ button {
 
 .icon-md {
     font-size: 30px!important;
+    margin-top: 10px;
 }
 
 .icon-lg {
@@ -610,7 +615,7 @@ a[data-lightbox]:hover img {
 .next-lightbox,
 .prev-lightbox {
     font-size: 20px;
-    color: rgba(255, 255, 255, .9);
+    color: rgb(255, 255, 255);
     background: rgba(0, 0, 0, .5);
     transition: all .2s ease-in-out;
     position: absolute;
@@ -657,6 +662,28 @@ a {
 .container {
     max-width: 1000px;
 }
+
+#bloc-6 > div > div > div > h1,
+#bloc-6 > div > div > div > p,
+#bloc-6 > div{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+#bloc-0 > div > nav > div.collapse.navbar-collapse.navbar-1.special-dropdown-nav > ul{
+    margin-right: 100px;
+}
+
+#bloc-0 > div > nav > div.collapse.navbar-collapse.navbar-1.special-dropdown-nav > ul > li:nth-child(1) > a{
+
+    margin-right: 10px;
+}
+
+#bloc-0 > div > nav > div.collapse.navbar-collapse.navbar-1.special-dropdown-nav > ul{
+
+    list-style: none;
+}
+
 
 .hero-bloc-text {
     font-size: 38px;
@@ -741,6 +768,8 @@ h4 {
 
 .portfolio-thumb {
     margin-bottom: 24px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .portfolio-row {
@@ -771,15 +800,15 @@ h4 {
 }
 
 .bgc-atomic-tangerine {
-    background-color: #F3976C;
+    background-color: #990000;
 }
 
 .tc-white {
-    color: #F3976C!important;
+    color: #FFFFFF!important;
 }
 
 .btn-atomic-tangerine {
-    background: #F3976C;
+    background: #990000;
     color: #FFFFFF!important;
 }
 
@@ -793,11 +822,11 @@ h4 {
 }
 
 .ltc-white:hover {
-    color: #cccccc!important;
+    color: #ffffff!important;
 }
 
 .ltc-atomic-tangerine {
-    color: #F3976C!important;
+    color: #990000!important;
 }
 
 .ltc-atomic-tangerine:hover {
@@ -848,13 +877,13 @@ h4 {
     }
 }
 
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
     .b-parallax {
         background-attachment: scroll;
     }
 }
 
-@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
+@media only screen and (min-width: 1024px) and (max-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
     .b-parallax {
         background-attachment: scroll;
     }
@@ -872,10 +901,6 @@ h4 {
         overflow-x: hidden;
         position: relative;
     }
-    .bloc {
-        padding-left: constant(safe-area-inset-left);
-        padding-right: constant(safe-area-inset-right);
-    }
     .bloc-group,
     .bloc-group .bloc {
         display: block;
@@ -884,8 +909,6 @@ h4 {
     .bloc-fill-screen .fill-bloc-top-edge,
     .bloc-fill-screen .fill-bloc-bottom-edge {
         padding: 0 20px;
-        padding-left: constant(safe-area-inset-left);
-        padding-right: constant(safe-area-inset-right);
     }
 }
 
@@ -946,7 +969,7 @@ h4 {
         background: rgba(0, 0, 0, .8);
     }
     #hero-bloc .navbar .nav a {
-        color: rgba(255, 255, 255, .6);
+        color: rgb(255, 255, 255);
     }
     .hero {
         padding: 50px 0;
